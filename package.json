@@ -1,0 +1,23 @@
+{
+  "name": "Blog",
+  "version": "1.0.0",
+  "description": "Blog practice using MEAN stack.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "mean-blog"
+  },
+  "keywords": [
+    "mean",
+    "full-stack",
+    "blog"
+  ],
+  "author": "Ban",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.12.3"
+  }
+}
