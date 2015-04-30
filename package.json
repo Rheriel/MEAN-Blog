@@ -1,23 +1,28 @@
 {
   "name": "Blog",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "Blog practice using MEAN stack.",
-  "main": "index.js",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./bin/www"
   },
   "repository": {
     "type": "git",
-    "url": "mean-blog"
+    "url": "git@github.com:Rheriel/MEAN-Blog.git"
   },
   "keywords": [
     "mean",
     "full-stack",
     "blog"
   ],
-  "author": "Ban",
-  "license": "ISC",
   "dependencies": {
-    "express": "^4.12.3"
+    "angular": "^1.3.15",
+    "body-parser": "~1.12.0",
+    "cookie-parser": "~1.3.4",
+    "debug": "~2.1.1",
+    "express": "~4.12.2",
+    "jade": "~1.9.2",
+    "morgan": "~1.5.1",
+    "serve-favicon": "~2.2.0"
   }
 }
