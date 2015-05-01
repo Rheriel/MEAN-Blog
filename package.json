@@ -4,7 +4,7 @@
   "description": "Blog practice using MEAN stack.",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "nodemon ./app.js"
   },
   "repository": {
     "type": "git",
