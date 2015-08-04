@@ -1,11 +1,11 @@
 1.- npm install
-2.- 
-2.a MacOS or Linux:
+2.- npm install -g nodemon
+3.- 
+3.a MacOS or Linux:
 	DEBUG=myapp npm start
-2.b Windows
+3.b Windows
 	set DEBUG=myapp & npm start
 
 	- OR -
-3.-
-	Use nodemon instead of npm to start.
+4.-	Use nodemon instead of npm to start.
 
