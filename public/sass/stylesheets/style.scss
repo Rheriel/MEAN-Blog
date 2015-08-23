@@ -1,3 +1,5 @@
+@import url("hover-min.css");
+
 $darkGrayFontColor: #1d1d1d;
 $font-gudea: Gudea, sans-serif;
 $logoUrl: '/images/HM_Logo.png';
@@ -15,10 +17,33 @@ body {
   max-width: 50px;
   height: auto;
   width: auto;
+  float: left;
 }
 
-menu, a {
-  font: 100% $font-gudea;
-  color: $darkGrayFontColor;
-  padding-right: 20px;
+.menu-links {
+  float: right;
+  position: absolute;
+  bottom: 50%;
+  right: 0;
+}
+
+#menu {
+   min-height: 50px;
+   height: 50px;
+   margin: auto;
+   width: 100%;
+   position: relative;
+
+   a {
+      font: 100% $font-gudea;
+      color: $darkGrayFontColor;
+      padding-right: 20px;
+
+      &:hover {
+      	color: #B00404;
+      	text-decoration: none;
+      	font-weight: 300;
+      	
+      }
+   }
 }
