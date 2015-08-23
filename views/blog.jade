@@ -3,9 +3,10 @@ title pageTitle
 extends layout
 
 block content
-  #blog-wrapper
-    include ./includes/menu.jade
-    h1= pageTitle
-    p Welcome to #{pageTitle}
+  .blog-wrapper
+     .inner-wrapper
+        include ./includes/menu.jade
+        h1= pageTitle
+        p Welcome to #{pageTitle}
 
 
