@@ -1,12 +1,60 @@
-@import url("hover-min.css");
-
 $darkGrayFontColor: #1d1d1d;
+$linkHoverColor: #B00404;
 $font-gudea: Gudea, sans-serif;
 $logoUrl: '/images/HM_Logo.png';
+$heroImageUrl: '/images/hero-image.jpg';
+@import 'hover.css';
 
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+.hero-image-container {
+	background: url(images/bg.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+@media screen and (max-width: 680px) {
+  .menu-columns {
+    width: 100%; 
+  }
+}
+
+nav {
+  height: 50px;
+  width: 100%;
+  position: relative;
+     
+  ul {
+    padding: 0;
+    margin: 0 auto;
+    width: 600px;
+    height: 40px;
+  }
+
+  li {
+    display: inline;
+    float: left;
+  }
+}
+
+#blog-wrapper {
+  width: 1024px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.menu-columns {
+  width: 50%;
+  min-width: 280px;
+  vertical-align: middle;
+  display: inline-block;
+  background-color: #f45805;
+  color: #fff;
+  margin: auto;
+ }
+
+.align-right {
+  text-align: right;
 }
 
 .menu-logo {
@@ -21,29 +69,32 @@ body {
 }
 
 .menu-links {
-  float: right;
-  position: absolute;
   bottom: 50%;
   right: 0;
+  text-align: right;
+  display: inline;
+  float: right;
 }
 
 #menu {
    min-height: 50px;
    height: 50px;
    margin: auto;
+   margin: 10px 10px;
+   padding-bottom: 20px;
    width: 100%;
    position: relative;
 
    a {
       font: 100% $font-gudea;
       color: $darkGrayFontColor;
-      padding-right: 20px;
+      margin-right: 20px;
 
       &:hover {
-      	color: #B00404;
+      	color: $linkHoverColor;
       	text-decoration: none;
       	font-weight: 300;
-      	
+
       }
    }
 }
