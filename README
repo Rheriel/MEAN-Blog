@@ -2,6 +2,7 @@
 2.- npm install -g nodemon
 2.a npm install -g bower
 2.b npm install node-sass
+2.c npm install node-sass-middleware
 3.- 
 3.a MacOS or Linux:
 	DEBUG=myapp npm start

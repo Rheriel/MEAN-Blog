@@ -3,5 +3,12 @@ title pageTitle
 extends layout
 
 block content
+  #menu
+    .menu-logo 
+       img(src='/images/HM_Logo.png')
+    a(href='\about') About
+    a.menu-link(href='\blog') Blog  
   h1= pageTitle
   p Welcome to #{pageTitle}
+
+
