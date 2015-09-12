@@ -2,7 +2,7 @@ $darkGrayFontColor: #1d1d1d;
 $linkHoverColor: #B00404;
 $font-gudea: Gudea, sans-serif;
 $font-quicksand: Quicksand, sans-serif;
-$logoUrl: '/images/HM_Logo.png';
+$logoUrl: '/images/ban-logo.png';
 $heroImageUrl: '/images/hero-image-2.jpg';
 @import 'hover.css';
 
@@ -116,7 +116,7 @@ $heroImageUrl: '/images/hero-image-2.jpg';
   }
 }
 
-@media (min-width: 800px) {
+@media (min-width: 768px) {
   .menu {
     width: 720px;
   }
@@ -157,11 +157,7 @@ $heroImageUrl: '/images/hero-image-2.jpg';
 }
 
 .menu-logo {
-  min-width: 50px;
-  min-height: 50px;
   display: block;
-  max-height: 50px;
-  max-width: 50px;
   height: auto;
   width: auto;
   float: left;
