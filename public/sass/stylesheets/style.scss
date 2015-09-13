@@ -4,48 +4,20 @@ $font-gudea: Gudea, sans-serif;
 $font-quicksand: Quicksand, sans-serif;
 $logoUrl: '/images/ban-logo.png';
 $heroImageUrl: '/images/hero-image-2.jpg';
-@import 'hover.css';
+@import 'hover.scss';
+@import 'hero-images.scss';
+@import 'responsiveness.scss';
 
-.hero-image {
-  background: 
-    linear-gradient(
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5)
-    ),
-    url($heroImageUrl) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+body {
+  background-color: #eee;
+}
 
-  /* Set rules to fill background */
-  min-height: 100%;
-  min-width: 1024px;
-	
-  /* Set up proportionate scaling */
+.menu-wrapper {
   width: 100%;
-  height: auto;
-	
-  /* Set up positioning */
-  position: fixed;
-  top: 0;
-  left: 0;
-}
-
-@media screen and (max-width: 1024px) { /* Specific to this particular image */
-  img.bg {
-    left: 50%;
-    margin-left: -512px;   /* 50% */
-  }
-}
-
-@media screen and (max-width: 680px) {
-  .menu {
-    width: 600px;
-  }
-  .menu-columns {
-    width: 50%; 
-  }
+  margin: auto;
+  border:1px solid #D0D0D0;
+  background-color: #ffffff;
+  height: 60px;
 }
 
 .blog-wrapper {
@@ -53,6 +25,8 @@ $heroImageUrl: '/images/hero-image-2.jpg';
   min-width: 200px;
   margin: auto;
   text-align: left;
+  
+  
 }
 
 .inner-wrapper {
@@ -66,94 +40,6 @@ $heroImageUrl: '/images/hero-image-2.jpg';
   vertical-align: middle;
   display: inline-block;
   margin: auto;
-}
-
-@media (min-width: 280px) {
-  .menu {
-    width: 200px;
-  }
-  .menu-columns {
-    width: 50%; 
-  }
-  .blog-wrapper .inner-wrapper{
-    width: 200px;
-  }
-}
-
-@media (min-width: 375px) {
-  .menu {
-    width: 280px;
-  }
-  .menu-columns {
-    width: 50%; 
-  }
-  .blog-wrapper .inner-wrapper{
-    width: 280px;
-  }
-}
-
-@media (min-width: 480px) {
-  .menu {
-    width: 400px;
-  }
-  .menu-columns {
-    width: 50%; 
-  }
-  .blog-wrapper .inner-wrapper{
-    width: 400px;
-  }
-}
-
-@media (min-width: 640px) {
-  .menu {
-    width: 560px;
-  }
-  .menu-columns {
-    width: 50%; 
-  }
-  .blog-wrapper .inner-wrapper{
-    width: 560px;
-  }
-}
-
-@media (min-width: 768px) {
-  .menu {
-    width: 720px;
-  }
-  .menu-columns {
-    width: 50%; 
-  }
-  .blog-wrapper .inner-wrapper{
-    width: 720px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .menu {
-    width: 744px;
-  }
-  .menu-columns {
-    width: 50%;
-  }
-  .blog-wrapper .inner-wrapper{
-    width: 744px;
-  }
-}
-
-@media (min-width: 2048px) {
-  .menu {
-    width: 1968px;
-  }
-  .menu-columns {
-    width: 50%; 
-  }
-  .blog-wrapper .inner-wrapper{
-    width: 1968px;
-  }
-}
-
-.align-right {
-  text-align: right;
 }
 
 .menu-logo {
